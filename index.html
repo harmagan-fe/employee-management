@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Roboto, sans-serif;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <app-navbar></app-navbar>
+      <div class="container">
+        <div id="router-outlet"></div>
+      </div>
+    </div>
+    <script type="module" src="../src/app.js"></script>
+    <script type="module">
+      if (location.search.includes("test=true")) {
+        import("../src/test/test-runner.js");
+      }
+    </script>
+  </body>
+</html>
