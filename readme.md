@@ -1,3 +1,7 @@
+A lightweight employee management dashboard built with vanilla JavaScript. Supports adding, editing, and removing employee records with a clean, dependency-free frontend — no frameworks, just core JS and DOM manipulation.
+
+## Setup 
+
 Install dependencies
 npm install
 
